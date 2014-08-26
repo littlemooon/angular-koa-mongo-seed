@@ -1,0 +1,20 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <h1>Tabs</h1>
+      <hr class="soften">
+    </div>
+    
+    <section class="row"> 
+      <ul class="nav nav-tabs" role="tablist">
+        <li ng-repeat="t in tabs" ng-class="{active:isActive('tabs'+t.route)}">
+          <a ui-sref={{t.route}}>{{t.name}}</a>
+        </li>
+      </ul>
+
+      <hr class="soften">
+      <div class="panel" ui-view></div>
+
+    </section>
+  </div>
+</div>

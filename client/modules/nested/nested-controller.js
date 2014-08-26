@@ -1,0 +1,1 @@
+angular.module('app.nested').controller('NestedCtrl', function($scope) {});
